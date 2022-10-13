@@ -10708,6 +10708,11 @@ hr {
   background: #cd2d39;
 }
 
+.main .btn-reset {
+  color: #FFF;
+  background: #999;
+}
+
 .love {
   position: relative;
   background-size: cover;
