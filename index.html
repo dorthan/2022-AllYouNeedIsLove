@@ -10,25 +10,26 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/index.html" />
     <meta property="og:image" content="/images/fb.jpg" />
-    <meta property="og:description"
-        content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
-    <meta name="description"
-        content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
+    <meta property="og:description" content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
+    <meta name="description" content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
     <meta name="keywords" content="" />
     <meta name="author" content="dorthan.pan@gmail.com" />
 
-    <title>2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！</title>
+    <title>2022 愛之日常音樂節 - ALL YOU NEED IS LOVE！</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/all.css?V=202201111700">
 
     <!-- MEDIA CODE Start -->
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P7RMYNCS7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-3P7RMYNCS7');
@@ -49,13 +50,23 @@
                         <div class="form-group">
                             <label for="formControlRange">總金額</label>
                             <input type="text" class="form-control disable" id="totalAll" readonly>
-                        </div>                      
+                        </div>
 
                         <div class="form-group">
-                            <label for="formControlRange">T恤 $500</label>
-                            <input type="number" class="form-control" id="distance" min="1" max="500" step="1"
-                                maxlength="3">                           
+                            <label for="formControlRange">T恤 $500</label>                          
                         </div>
+
+                        <div class="form-group">                            
+                            <div class="btn-group btn-group-toggle nav-fill" data-toggle="buttons">
+                                <label class="btn btn-secondary active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 黑色
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 白色
+                                </label>
+                            </div>
+                        </div>
+
 
                         <div class="form-group">
                             <label for="formControlRange">環保購物袋 $500</label>
@@ -97,13 +108,13 @@
                                 step="1" value="1">
                         </div>
 
-                        
-                       
+
+
                     </form>
-                    <img src="./img/product.jpg" class="img-fluid"/>
+                    <img src="./img/product.jpg" class="img-fluid" />
                 </div>
 
-                
+
             </section>
         </main>
     </div>
