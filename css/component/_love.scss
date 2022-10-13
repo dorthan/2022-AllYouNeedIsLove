@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+.main{
+    .btn{
+        &-submit{
+            color: #FFF;
+            background: #cd2d39;
+        }
+    }
+
+}
+
 .love{
     position: relative;    
     background-size: cover;
@@ -16,9 +26,28 @@
     // width: 100%;
     color: $c-white;
 
+    marquee{
+        border: 1px solid #cd2d39;
+    }
+
     label{
         margin-bottom: rem(0);
         line-height: 1;
+
+        span{
+            display: inline-flex;
+            background: #cd2d39;
+            color: #FFF;
+            line-height: 1;
+            width: rem(19);
+            height: rem(19);
+            align-items: center;
+            justify-content: center;
+            border-radius: rem(19);
+            border: 1px solid #cd2d39;
+            margin-right: rem(5);
+            font-weight: bold;
+        }
     }
 
     &-control {
@@ -119,13 +148,7 @@
         }
     }
 
-    .btn{
-        &-submit{
-            color: #FFF;
-            background: #cd2d39;
-        }
-    }
-
+  
 
 }
 
