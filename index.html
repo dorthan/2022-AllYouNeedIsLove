@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta property="og:title" content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/index.html" />
+    <meta property="og:image" content="/images/fb.jpg" />
+    <meta property="og:description"
+        content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
+    <meta name="description"
+        content="2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！ " />
+    <meta name="keywords" content="" />
+    <meta name="author" content="dorthan.pan@gmail.com" />
+
+    <title>2022 愛之日常音樂節 -  ALL YOU NEED IS LOVE！</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/all.css?V=202201111700">
+
+    <!-- MEDIA CODE Start -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P7RMYNCS7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3P7RMYNCS7');
+    </script>
+
+    <!-- MEDIA CODE End -->
+</head>
+
+<body>
+    <div class="wrap" id="index">
+        <!--main-->
+        <main class="index container" id="main">
+            <!-- testdrive -->
+            <section class="testdrive row justify-content-center" id="testdrive">
+                <div class="col-12 col-lg-6">
+                    <h2 class="title__h2">愛之日常音樂節 - 週邊商品計算</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="formControlRange">總金額</label>
+                            <input type="text" class="form-control disable" id="totalAll" readonly>
+                        </div>                      
+
+                        <div class="form-group">
+                            <label for="formControlRange">搭乘距離(公里)</label>
+                            <input type="number" class="form-control" id="distance" min="1" max="500" step="1"
+                                maxlength="3">
+                            <input type="range" class="form-control-range custom-range" id="distanceRange" min="1"
+                                max="500" step="1" value="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formControlRange">搭乘時間(分鐘)</label>
+                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
+                                maxlength="3">
+                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
+                                step="1" value="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formControlRange">動態加乘倍數</label>
+                            <input type="number" class="form-control" id="multiplier" min="1.00" max="10.00" step="0.1"
+                                maxlength="2">
+                            <input type="range" class="form-control-range custom-range" id="multiplierRange" min="1"
+                                max="10" step="0.1" value="1">
+                        </div>
+
+                       
+                    </form>
+                    <img src="./img/product.jpg" class="img-fluid"/>
+                </div>
+
+                
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/index.js?v=202201111700"></script>
+
+
+</body>
+
+</html>
