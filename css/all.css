@@ -10696,6 +10696,13 @@ hr {
   margin-bottom: 10px;
 }
 
+.title__red {
+  line-height: 1.2;
+  color: #cd2d39;
+  padding: 0.3125rem;
+  border: 2px solid #cd2d39;
+}
+
 .main .btn-submit {
   color: #FFF;
   background: #cd2d39;
