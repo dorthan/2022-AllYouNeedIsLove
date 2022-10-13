@@ -39,79 +39,302 @@
 </head>
 
 <body>
-    <div class="wrap" id="index">
+    <div class="wrap love" id="index">
         <!--main-->
         <main class="index container" id="main">
             <!-- testdrive -->
             <section class="testdrive row justify-content-center" id="testdrive">
                 <div class="col-12 col-lg-6">
-                    <h2 class="title__h2">愛之日常音樂節 - 週邊商品計算</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="formControlRange">總金額</label>
-                            <input type="text" class="form-control disable" id="totalAll" readonly>
-                        </div>
+                    <h2 class="title__h2 w-100 text-center">愛之日常 - 週邊商品</h2>
+                    <form class="form">
 
-                        <div class="form-group">
-                            <label for="formControlRange">T恤 $500</label>                          
-                        </div>
-
-                        <div class="form-group">                            
-                            <div class="btn-group btn-group-toggle nav-fill" data-toggle="buttons">
-                                <label class="btn btn-secondary active">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 黑色
-                                </label>
-                                <label class="btn btn-secondary">
-                                    <input type="radio" name="options" id="option2" autocomplete="off"> 白色
-                                </label>
+                        <!-- 黑色 T恤 $500 -->
+                        <div>
+                            <label for="formControlRange">黑色 T恤 {{priceText}}</label>
+                            <div class="row text-white">
+                                <div class="col-3">
+                                    <label for="TBS">S</label>
+                                    <select class="form-control" id="TBS" v-model="TBS">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TBM">M</label>
+                                    <select class="form-control" id="TBM" v-model="TBM">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TBL">L</label>
+                                    <select class="form-control" id="TBL" v-model="TBL">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TBXL">XL</label>
+                                    <select class="form-control" id="TBXL" v-model="TBXL">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
+                        <hr>
 
-
-                        <div class="form-group">
+                        <!-- 白色 T恤 $500 -->
+                        <div>
+                            <label for="formControlRange">白色 T恤 $500</label>
+                            <div class="row text-white">
+                                <div class="col-3">
+                                    <label for="TWS">S</label>
+                                    <select class="form-control" id="TWS" v-model="TWS">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TWM">M</label>
+                                    <select class="form-control" id="TWM" v-model="TWM">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TWL">L</label>
+                                    <select class="form-control" id="TWL" v-model="TWL">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="TWXL">XL</label>
+                                    <select class="form-control" id="TWXL" v-model="TWXL">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- 環保購物袋  $500 -->
+                        <div>
                             <label for="formControlRange">環保購物袋 $500</label>
-                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
-                                maxlength="3">
-                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
-                                step="1" value="1">
+                            <div class="row text-white">
+                                <div class="col">
+                                    <label for="bagB">黑色</label>
+                                    <select class="form-control" id="bagB" v-model="bagB">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="bagW">白色</label>
+                                    <select class="form-control" id="bagW" v-model="bagW">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <!-- 識別證組 $300 -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="card">識別證組 $300</label>
+                                    <select class="form-control" id="card" v-model="card">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 浴巾 $500 -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="bigTowel">浴巾 $500</label>
+                                    <select class="form-control" id="bigTowel" v-model="bigTowel">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <!-- 毛巾 $400 -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="smallTowel">毛巾 $400</label>
+                                    <select class="form-control" id="smallTowel" v-model="smallTowel">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- 襪子 $200 -->
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="sock">襪子 $200</label>
+                                    <select class="form-control" id="sock" v-model="sock">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group package" v-show="package>0">
+                            <label for="formControlRange">全套組優惠 $2000</label>
+                            <input type="text" class="form-control disable" id="packageNo" readonly v-model="package">
+                            <hr>
                         </div>
 
-                        <div class="form-group">
-                            <label for="formControlRange">識別證組 $300</label>
-                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
-                                maxlength="3">
-                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
-                                step="1" value="1">
-                        </div>
+                     
 
-                        <div class="form-group">
-                            <label for="formControlRange">浴巾 $500</label>
-                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
-                                maxlength="3">
-                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
-                                step="1" value="1">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="formControlRange">毛巾 $400</label>
-                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
-                                maxlength="3">
-                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
-                                step="1" value="1">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="formControlRange">襪子 $200</label>
-                            <input type="number" class="form-control" id="time" min="1" max="720" step="1"
-                                maxlength="3">
-                            <input type="range" class="form-control-range custom-range" id="timeRange" min="1" max="720"
-                                step="1" value="1">
+                        <div class="form-group totalAll">
+                            <label for="formControlRange">總金額</label>
+                            <input type="text" class="form-control disable" id="totalAll" readonly v-model="totalAllText">
                         </div>
 
 
+                        <a href="#" class="btn btn-submit btn-lg btn-block" >確　認</a>
+
+                        
+                        <hr>
 
                     </form>
                     <img src="./img/product.jpg" class="img-fluid" />
+                    <img src="./img/2022AllYouMeedIsLove.png" class="img-fluid p-5" />
                 </div>
 
 
@@ -121,8 +344,9 @@
 
     <!-- JavaScript -->
     <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/vue/vue.min.js"></script>
     <script src="lib/bootstrap/bootstrap.min.js"></script>
-    <script src="js/index.js?v=202201111700"></script>
+    <script src="js/love.js?v=202201111700"></script>
 
 
 </body>

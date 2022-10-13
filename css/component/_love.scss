@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
-.testdrive{
+.love{
     position: relative;    
     background-size: cover;
+
+    hr{
+        background: #FFF;
+        margin: rem(15) 0;
+    }
 }
 
 .form {
@@ -10,6 +15,11 @@
     flex: 0 0 100%;
     // width: 100%;
     color: $c-white;
+
+    label{
+        margin-bottom: rem(0);
+        line-height: 1;
+    }
 
     &-control {
         color: $c-white;
@@ -89,7 +99,7 @@
         margin-bottom: rem(10);
         label{
             color: $c-white;
-            margin-bottom: 0;
+            margin-bottom: rem(5);
         }
     }
 
@@ -106,6 +116,13 @@
             position: absolute;
             left: rem(-10);
             top: rem(10);
+        }
+    }
+
+    .btn{
+        &-submit{
+            color: #FFF;
+            background: #cd2d39;
         }
     }
 
