@@ -321,7 +321,8 @@
                         </div>
 
                         <div class="form-group ">
-                            <label for="formControlRange">全套優惠組數 : 共 {{ package }} 組 , 共優惠 NT${{ packageSaleText }}</label>
+                            <label for="formControlRange">全套優惠組數 : 共 {{ package }} 組 , 共優惠
+                                NT${{ packageSaleText }}</label>
                         </div>
 
 
@@ -334,7 +335,7 @@
                         </div>
 
 
-                        <a href="#order" class="btn btn-submit btn-lg btn-block" data-toggle="collapse" >確　認</a>
+                        <a href="#order" class="btn btn-submit btn-lg btn-block" data-toggle="collapse">確　認</a>
 
 
                         <hr>
@@ -342,13 +343,41 @@
                         <img src="./img/product.jpg" class="img-fluid" />
                         <img src="./img/2022AllYouMeedIsLove.png" class="img-fluid p-5" />
                     </form>
-                  </div>
+                </div>
             </section>
             <!-- order -->
-            <section id="order" class="collapse" data-parent="#main">
-                Order
+            <section id="order" class="order collapse" data-parent="#main">
 
-                <a href="#love" class="btn btn-submit btn-lg btn-block" data-toggle="collapse" >取　消</a>
+                <h1 for="formControlRange">總金額 : {{ totalPayText }}</h1>
+                <br>
+                <h4 for="formControlRange">全套優惠組數 : 共 {{ package }} 組</h4>
+                <h4 for="formControlRange">總選購商品數 : 共 {{ totalObj }} 件</h4>
+
+                <h2 v-show="TBS>0">T恤 黑 S x{{TBS}}</h2>
+                <h2 v-show="TBM>0">T恤 黑 M x{{TBM}}</h2>
+                <h2 v-show="TBL>0">T恤 黑 L x{{TBL}}</h2>
+                <h2 v-show="TBXL>0">T恤 黑 XL x{{TBXL}}</h2>
+
+                <h2 v-show="TWS>0">T恤 白 S x{{TWS}}</h2>
+                <h2 v-show="TWM>0">T恤 白 M x{{TWM}}</h2>
+                <h2 v-show="TWL>0">T恤 白 L x{{TWL}}</h2>
+                <h2 v-show="TWXL>0">T恤 白 XL x{{TWXL}}</h2>
+
+                <h2 v-show="bagB>0">袋 黑 x{{bagB}}</h2>
+                <h2 v-show="bagW>0">袋 白 x{{bagW}}</h2>
+
+                <h2 v-show="card>0">證 白 x{{card}}</h2>
+
+                <h2 v-show="bigTowel>0">大毛巾 x{{bigTowel}}</h2>                
+                <h2 v-show="smallTowel>0">小毛巾 x{{smallTowel}}</h2>
+
+                <h2 v-show="sock>0">襪組 x{{sock}}</h2>
+                
+
+                
+
+
+                <a href="#love" class="btn btn-submit btn-lg btn-block" data-toggle="collapse">取　消</a>
             </section>
         </main>
     </div>
