@@ -10729,6 +10729,8 @@ hr {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .form marquee {
