@@ -316,29 +316,25 @@
                         <hr>
 
 
-                        <div class="form-group ">
+                        <div class="form-group " v-show="totalObj>0">
                             <label for="formControlRange">總選購商品數 : 共 {{ totalObj }} 件 , 共 {{ totalAllText }}</label>
                         </div>
 
-                        <div class="form-group ">
+                        <div class="form-group " v-show="package>0">
                             <label for="formControlRange">全套優惠組數 : 共 {{ package }} 組 , 共優惠
                                 NT${{ packageSaleText }}</label>
                         </div>
 
-
-
-
-                        <div class="form-group totalAll">
+                        <div class="form-group totalAll" v-show="totalPay>0">
                             <label for="formControlRange">總金額</label>
                             <input type="text" class="form-control disable" id="totalAll" readonly
                                 v-model="totalPayText">
                         </div>
 
+                        <a href="#order" class="btn btn-submit btn-lg btn-block" data-toggle="collapse" v-show="totalObj>0">確　認</a>
 
-                        <a href="#order" class="btn btn-submit btn-lg btn-block" data-toggle="collapse">確　認</a>
 
-
-                        <hr>
+                        <hr v-show="totalObj>0">
 
                         <img src="./img/product.jpg" class="img-fluid" />
                         <img src="./img/2022AllYouMeedIsLove.png" class="img-fluid p-5" />
