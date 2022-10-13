@@ -338,7 +338,7 @@
                             <div class="col">
                                 <a href="#order" class="btn btn-submit btn-lg btn-block" data-toggle="collapse"
                                     v-show="totalObj>0">確　認</a>
-                            </div>                           
+                            </div>
                         </div>
 
                         <hr v-show="totalObj>0">
@@ -349,40 +349,42 @@
                 </div>
             </section>
             <!-- order -->
-            <section id="order" class="order collapse" data-parent="#main">
+            <section id="order" class="order row collapse" data-parent="#main">
 
+                <div class="col-12 col-lg-6">
+                    <h1 v-show="totalPay>0">總金額 : {{ totalPayText }}</h1>
+                    <br>
+                    <h3 v-show="package>0">全套優惠組數 : 共 {{ package }} 組</h3>
 
-                <h1 v-show="totalPay>0">總金額 : {{ totalPayText }}</h1>
-                <br>
-                <h3 v-show="package>0">全套優惠組數 : 共 {{ package }} 組</h3>
+                    <br>
+                    <h2 v-show="TBS>0">T恤 黑 S x{{TBS}}</h2>
+                    <h2 v-show="TBM>0">T恤 黑 M x{{TBM}}</h2>
+                    <h2 v-show="TBL>0">T恤 黑 L x{{TBL}}</h2>
+                    <h2 v-show="TBXL>0">T恤 黑 XL x{{TBXL}}</h2>
 
-                <br>
-                <h2 v-show="TBS>0">T恤 黑 S x{{TBS}}</h2>
-                <h2 v-show="TBM>0">T恤 黑 M x{{TBM}}</h2>
-                <h2 v-show="TBL>0">T恤 黑 L x{{TBL}}</h2>
-                <h2 v-show="TBXL>0">T恤 黑 XL x{{TBXL}}</h2>
+                    <h2 v-show="TWS>0">T恤 白 S x{{TWS}}</h2>
+                    <h2 v-show="TWM>0">T恤 白 M x{{TWM}}</h2>
+                    <h2 v-show="TWL>0">T恤 白 L x{{TWL}}</h2>
+                    <h2 v-show="TWXL>0">T恤 白 XL x{{TWXL}}</h2>
 
-                <h2 v-show="TWS>0">T恤 白 S x{{TWS}}</h2>
-                <h2 v-show="TWM>0">T恤 白 M x{{TWM}}</h2>
-                <h2 v-show="TWL>0">T恤 白 L x{{TWL}}</h2>
-                <h2 v-show="TWXL>0">T恤 白 XL x{{TWXL}}</h2>
+                    <h2 v-show="bagB>0">袋 黑 x{{bagB}}</h2>
+                    <h2 v-show="bagW>0">袋 白 x{{bagW}}</h2>
 
-                <h2 v-show="bagB>0">袋 黑 x{{bagB}}</h2>
-                <h2 v-show="bagW>0">袋 白 x{{bagW}}</h2>
+                    <h2 v-show="card>0">識別證 x{{card}}</h2>
 
-                <h2 v-show="card>0">識別證 x{{card}}</h2>
+                    <h2 v-show="bigTowel>0">大毛巾 x{{bigTowel}}</h2>
+                    <h2 v-show="smallTowel>0">小毛巾 x{{smallTowel}}</h2>
 
-                <h2 v-show="bigTowel>0">大毛巾 x{{bigTowel}}</h2>
-                <h2 v-show="smallTowel>0">小毛巾 x{{smallTowel}}</h2>
+                    <h2 v-show="sock>0">襪組 x{{sock}}</h2>
+                    <br>
+                    <h3 v-show="totalObj>0">總選購商品數 : 共 {{ totalObj }} 件</h3>
+                    <br>
 
-                <h2 v-show="sock>0">襪組 x{{sock}}</h2>
-                <br>
-                <h3 v-show="totalObj>0">總選購商品數 : 共 {{ totalObj }} 件</h3>
-                <br>
+                    <h2 class="title__red w-100 text-center">請出示此頁面給工作人員<br>並準備好現金 {{ totalPayText }}<br>感謝您的協助與支持!</h2>
 
-                <h2 class="title__red w-100 text-center">請出示此頁面給工作人員<br>並準備好現金 {{ totalPayText }}<br>感謝您的協助與支持!</h2>
+                    <a href="#love" class="btn btn-submit btn-lg btn-block" data-toggle="collapse">回上一步</a>
 
-                <a href="#love" class="btn btn-submit btn-lg btn-block" data-toggle="collapse">回上一步</a>
+                </div>
             </section>
         </main>
     </div>
