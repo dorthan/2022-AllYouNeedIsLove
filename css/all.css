@@ -10763,7 +10763,7 @@ hr {
   border: 1px solid #cd2d39;
   margin-right: 0.3125rem;
   font-weight: bold;
-  padding: 0.5625rem;
+  padding: 0.625rem 0.6875rem 0.6875rem 0.625rem;
 }
 
 .form-control {
