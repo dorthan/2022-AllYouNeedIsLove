@@ -69,8 +69,23 @@ function vueSet() {
 
                 this.totalPay = this.totalAll - (this.package * this.sale);
             },
-            submitOrder: function(){
-
+            resetOrder: function () {
+                this.TBS = 0;
+                this.TBM = 0;
+                this.TBL = 0;
+                this.TBXL = 0;
+                this.TWS = 0;
+                this.TWM = 0;
+                this.TWL = 0;
+                this.TWXL = 0;
+                this.bag = 0;
+                this.bagB = 0;
+                this.bagW = 0;
+                this.card = 0;
+                this.bigTowel = 0;
+                this.smallTowel = 0;
+                this.sock = 0;
+                this.planningTotla();
             },
         },
         computed: {
