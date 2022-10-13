@@ -10732,7 +10732,8 @@ hr {
 }
 
 .form marquee {
-  font-size: 1.125rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
   border: 1px solid #cd2d39;
 }
 
