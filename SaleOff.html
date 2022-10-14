@@ -203,13 +203,22 @@
                                 <div class="form-group">
                                     <label for="sock"><span>6</span>襪子 {{ priceText.sock }}</label>
                                     <select class="form-control" id="sock" v-model="sock">
-                                         <option value="0">售馨</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <hr>
-
 
                         <div class="form-group " v-show="totalObj>0">
                             <small for="formControlRange">選購商品數 : 共 {{ totalObj }} 件 , {{ totalAllText }}</small>
